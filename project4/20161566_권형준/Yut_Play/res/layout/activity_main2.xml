@@ -1,0 +1,469 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/board1"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/Duces1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/Aces1"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Duces2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignBaseline="@+id/Duces1"
+        android:layout_alignBottom="@+id/Duces1"
+        android:layout_alignLeft="@+id/Aces2"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Threes2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/Duces2"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Threes1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/Duces1"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Fours1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/Threes1"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Fours2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/Threes2"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Fives1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/Fours1"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Fives2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/Fours2"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Sixes1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/Fives1"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Sixes2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/Fives2"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Choice1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/Sixes1"
+        android:layout_marginTop="57dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Choice2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignBaseline="@+id/Choice1"
+        android:layout_alignBottom="@+id/Choice1"
+        android:layout_alignLeft="@+id/Aces2"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Bonus1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Sixes1"
+        android:layout_below="@+id/Sixes1"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Bonus2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Sixes2"
+        android:layout_below="@+id/Sixes2"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Subtotal1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/Sixes1"
+        android:gravity="right"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/Subtotal2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/Sixes1"
+        android:gravity="right"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/fourofakind1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/Choice1"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/fourofakind2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/Choice2"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/fullhouse1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/fourofakind1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/fullhouse2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/fourofakind2"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/smallstraight1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/fullhouse1"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/smallstraight2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/fullhouse2"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/largestraight1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/smallstraight1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/largestraight2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/smallstraight2"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/yacht1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/largestraight1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/yacht2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/largestraight2"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/total1"
+        android:layout_width="64dp"
+        android:layout_height="27dp"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_below="@+id/yacht1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/total2"
+        android:layout_width="64dp"
+        android:layout_height="27dp"
+        android:layout_alignLeft="@+id/Aces2"
+        android:layout_below="@+id/yacht2"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/endgame"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="181dp"
+        android:onClick=""
+        android:text="End Game" />
+
+    <Button
+        android:id="@+id/Throw"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:onClick=""
+        android:text="Throw" />
+
+    <TextView
+        android:id="@+id/Aces1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="102dp"
+        android:gravity="center_horizontal"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Aces2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignTop="@+id/Aces1"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/Aces1"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Rounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Aces2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="58dp"
+        android:gravity="center"
+        android:text="1/12"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/RolledDice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Sixes2"
+        android:layout_marginLeft="66dp"
+        android:layout_toRightOf="@+id/Sixes2"
+        android:src="@drawable/dice_6" />
+
+    <ImageButton
+        android:id="@+id/RolledDice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RolledDice1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/RolledDice1"
+        android:src="@drawable/dice_6" />
+
+    <ImageButton
+        android:id="@+id/RolledDice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RolledDice1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/RolledDice2"
+        android:src="@drawable/dice_6" />
+
+    <ImageButton
+        android:id="@+id/RolledDice4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RolledDice1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/RolledDice3"
+        android:src="@drawable/dice_6" />
+
+    <ImageButton
+        android:id="@+id/RolledDice5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RolledDice1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/RolledDice4"
+        android:src="@drawable/dice_6" />
+
+    <ImageButton
+        android:id="@+id/SavedDice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/Aces2"
+        android:src="@drawable/empty" />
+
+    <ImageButton
+        android:id="@+id/SavedDice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/SavedDice1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/empty" />
+
+    <ImageButton
+        android:id="@+id/SavedDice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/RolledDice3"
+        android:layout_alignTop="@+id/SavedDice2"
+        android:src="@drawable/empty" />
+
+    <ImageButton
+        android:id="@+id/SavedDice4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/endgame"
+        android:layout_alignTop="@+id/SavedDice3"
+        android:src="@drawable/empty" />
+
+    <ImageButton
+        android:id="@+id/SavedDice5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Throw"
+        android:layout_alignTop="@+id/SavedDice4"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/Turns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/RolledDice5"
+        android:layout_alignTop="@+id/Duces2"
+        android:gravity="center"
+        android:text="3 left"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SavedDice1"
+        android:layout_alignLeft="@+id/Aces1"
+        android:layout_alignRight="@+id/Aces1"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_toLeftOf="@+id/SavedDice1"
+        android:layout_toRightOf="@+id/total1"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/playtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SavedDice1"
+        android:layout_alignTop="@+id/total2"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+</RelativeLayout>

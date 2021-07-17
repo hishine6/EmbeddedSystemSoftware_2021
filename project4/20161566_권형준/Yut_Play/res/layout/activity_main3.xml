@@ -1,0 +1,348 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_board"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="53dp"
+        android:text="Return To Main" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Back"
+        android:layout_marginTop="27dp"
+        android:text="Player 1 Wins"
+        android:textSize="90sp" />
+    
+    <TextView
+        android:id="@+id/result_Duces1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_Aces1"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Duces2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignBaseline="@+id/result_Duces1"
+        android:layout_alignBottom="@+id/result_Duces1"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Threes2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_Duces2"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Threes1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_Duces1"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Fours1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_Threes1"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Fours2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_Threes2"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Fives1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_Fours1"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Fives2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_Fours2"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Sixes1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_Fives1"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Sixes2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_Fives2"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Choice1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_Sixes1"
+        android:layout_marginTop="57dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Choice2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignBaseline="@+id/result_Choice1"
+        android:layout_alignBottom="@+id/result_Choice1"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Bonus1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Sixes1"
+        android:layout_below="@+id/result_Sixes1"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Bonus2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Sixes2"
+        android:layout_below="@+id/result_Sixes2"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Subresult_total1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_Sixes1"
+        android:gravity="right"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/result_Subresult_total2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_Sixes1"
+        android:gravity="right"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/result_fourofakind1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_Choice1"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_fourofakind2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_Choice2"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_fullhouse1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_fourofakind1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_fullhouse2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_fourofakind2"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_smallstraight1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_fullhouse1"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_smallstraight2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_fullhouse2"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_largestraight1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_smallstraight1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_largestraight2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_smallstraight2"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_yacht1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_largestraight1"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_yacht2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_largestraight2"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_total1"
+        android:layout_width="64dp"
+        android:layout_height="27dp"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_below="@+id/result_yacht1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/result_total2"
+        android:layout_width="64dp"
+        android:layout_height="27dp"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_below="@+id/result_yacht2"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/result_Aces1"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="102dp"
+        android:gravity="center_horizontal"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/result_Aces2"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_alignTop="@+id/result_Aces1"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/result_Aces1"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result_Aces2"
+        android:layout_alignLeft="@+id/result_Aces1"
+        android:layout_alignRight="@+id/result_Aces1"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result_Aces2"
+        android:layout_alignLeft="@+id/result_Aces2"
+        android:layout_alignRight="@+id/result_total2"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="50sp" />
+
+</RelativeLayout>

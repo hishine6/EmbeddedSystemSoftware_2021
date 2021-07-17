@@ -1,0 +1,1 @@
+cmd_/home/embe/HW_3/module/interrupt.ko := arm-none-linux-gnueabi-ld -EL -r  -T /work/achroimx_kernel/scripts/module-common.lds --build-id  -o /home/embe/HW_3/module/interrupt.ko /home/embe/HW_3/module/interrupt.o /home/embe/HW_3/module/interrupt.mod.o
