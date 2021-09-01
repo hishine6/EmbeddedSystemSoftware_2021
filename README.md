@@ -2,7 +2,7 @@
 
 
 # Project 1
-Learn how to use Control Devices and use IPC
+Learn how to use Device Contorls and use IPC
 
 # Project 2
 Learn how to use Device Drivers, Timer Device Driver
